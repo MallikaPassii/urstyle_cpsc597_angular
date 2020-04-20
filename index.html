@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="myApplication">
+    <head>
+        <!-------- Meta Properties -------->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>URSTYLE - Your Style is Fashion</title>
+        
+        <!------ External libraries and stylesheets ---->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!--------- Custom script and stylesheet -------->
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <div id="rectangle1">
+                    <img alt="Banner Image" src="blue1.jpg" class="bannerImg" />
+                    <div id="logoContainer">
+                        <img alt="Icon Banner" src="icon.png" class="bannerIcon" />
+                        <span class="logoText">UrStyle</span>
+                    </div>
+                </div>
+            </header>
+            
+            <div ng-controller="homepageController">
+                <ul class="categoryGrid">
+                    <li id="category{{ i }}" ng-repeat="i in items"><div class="overlay"><a href="#/{{i}}" title="{{i}}">{{ i }}</a></div></li>
+                </ul>
+                
+                <div class="tagLine">
+                    <svg height="150" width="1170">
+                        <text x="0" y="85" fill="#4dd2ff">Your style is Fashion!</text>
+                    </svg>
+                </div>
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="column">
+                      <img src="gridImg2.jpg" alt="Balck t-shirt" />
+                      <img src="gridImg1.jpg" alt="Blue dress" />
+                    </div>
+                    <div class="column">
+                        <img src="gridImg9.jpg" alt="clothes on hangers" />
+                        <img src="gridImg7.jpg" alt="blue door" />
+                    </div>
+                    <div class="column">
+                        <img src="gridImg5.jpg" alt="Blue dress green background" />
+                        <img src="gridImg4.jpg" alt="skirt pleats" />  
+                    </div>
+                    <div class="column">
+                        <img src="gridImg3.jpg" alt="Pink dress bows" />
+                        <img src="gridImg8.jpg" alt="denim jacket" />
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div ng-view></div>
+            <footer>
+                <div id="button"></div>
+                <div id="container">
+                    <div id="cont">
+                        <div class="footer_center">
+                            <h3>&copy; UrStyle Inc. | Contact Us </h3>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

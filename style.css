@@ -1,0 +1,209 @@
+body {
+    margin: 0 auto;
+}
+
+#rectangle1 {
+    background: rgba(240, 206, 206, 0.85);
+}
+
+.bannerImg {
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 10%;
+}
+#logoContainer {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    display: block;
+}
+
+.logoText {
+    vertical-align: top;
+    font-family: fantasy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 79px;
+    color: #A0566E;
+}
+li#categorywomen {
+    background-image: url("women.jpg");
+}
+li#categorymen {
+    background-image: url("men.jpg");
+}
+li#categoryfootwear {
+    background-image: url("footwear.jpg");
+}
+li#categoryfragrances {
+    background-image: url("fragrances.jpg");
+}
+
+ul.categoryGrid {
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.categoryGrid li{
+    list-style: none;
+    height: 400px;
+    width: 272px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    position: relative;
+}
+
+.container {
+    margin: 50px auto;
+}
+
+.tagLine{
+    text-align: center;
+    font-size: 46px;
+    font-family: monospace;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.8); /* White see-through */
+  color: #A0566E;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: A0566E;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+    text-transform: uppercase;
+}
+
+.overlay:hover {
+    height: 100%;
+    text-align: center;
+    padding-top: 20rem;
+}
+
+/* Footer CSS trial */
+
+footer #button{
+	width:35px;
+	height:35px;
+	border: #A0566E 10px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+footer #button:hover{
+	width:35px;
+	height:35px;
+	border: rgba(240, 206, 206, 0.85) 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: rgba(240, 206, 206, 0.85);
+}
+footer #cont{
+  position:relative;
+  top:0px;
+  right:0px;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+    text-align: center;
+}
+footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+    color: #A0566E;
+}
+
+/* Bootstrap CSS for Photo gallery grid */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
